@@ -19,12 +19,16 @@ print(movies)
 
 
 # More list methods
+print(new_list)
 new_list.insert(1, True)  # Lists can hold any type of data
+print(new_list)
 new_list.extend([1, 2, 3])
 print(new_list)
 new_list.reverse()
 print(new_list)
 print(new_list.count(1))  # Remember, 1 == True
+print(new_list.count(0))
+print(new_list)
 new_list.sort()
 print(new_list)
 

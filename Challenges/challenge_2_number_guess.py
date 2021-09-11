@@ -8,12 +8,18 @@ If the user doesn't win, tell them the number.
 """
 import random
 
-
 def run_game():
     answer = random.randint(1, 20)
-    print("I'm thinking of a number between 1 and 20")
-
-    guess = int(input("Make a guess: "))
-
+    count =0
+    while(count<3):
+        guess = int(input("Make a guess: "))
+        if(guess== answer):
+            print("Guessed correct")
+            break
+        elif(guess<answer):
+            print("Guess higher number")
+        else:
+            print("Guess lower number")
+        count = count+1
 
 run_game()

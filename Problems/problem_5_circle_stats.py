@@ -5,14 +5,12 @@ Print the result to the user.
 
 
 def area(r):
-    pass
-
+    return (22/7)*r*r
 
 def circumference(r):
-    pass
-
+    return 2*(22/7)*r
 
 radius = input("Circle radius: ")
 
-print('Area: {}')  # <-- Call the area function and print the result
-print('Circumference: {}')  # <-- Call the circumference function and print
+print('Area: '+str(area(10)))  # <-- Call the area function and print the result
+print('Circumference: '+str(circumference(10)))  # <-- Call the circumference function and print

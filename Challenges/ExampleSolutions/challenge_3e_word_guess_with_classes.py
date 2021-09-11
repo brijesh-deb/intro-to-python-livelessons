@@ -24,7 +24,6 @@ def pick_random_word():
         word = random.choice(words).strip()
     return word
 
-
 class WordGame(object):
     def __init__(self):
         self.answer = pick_random_word()
@@ -36,6 +35,7 @@ class WordGame(object):
                        for letter in self.answer]
         return ' '.join(letter_list)
 
+    # This can be called as a property as opposed to function. However, we cannn't pass parameters like in function
     @property
     def user_did_win(self):
         for letter in self.answer:

@@ -12,7 +12,9 @@ And so are you
 """
 
 # Ask the user to provide the missing words
-
+colour =input("Enter colour: ")
+colour2 =input("Enter colour2: ")
+adjective =input("Enter adjective: ")
 
 # Display the final story
-print(story)
+print(story.format(colour=colour,colour2=colour2,adjective=adjective))
